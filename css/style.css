@@ -9,21 +9,26 @@
 }
 html body{
     height: 100%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 @font-face {
     font-family:'Roboto', sans-serif ;
     src: url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@100&display=swap');
 }
+.clear{/*rodape do site*/
+    clear: both;
+}
 
 .center{
     width: 1280px;
     margin: 0;
+    padding: auto;
     
 }
 
 .header{
+    min-width: 1200px;
     width: 100%;
     height: 50px;
     margin: auto;
@@ -153,6 +158,7 @@ html body{
     color: white;
 }
 .container-2{/*texto que fala da empresa ferraz tech*/
+    min-width: 1200px;
     padding: 40px 0;
     display: inline-block;
     width: 100%;
@@ -193,16 +199,31 @@ html body{
 .container-section{
     text-align: center;
 }
-.container-single{
+.container-single{/*ajuste dos pc roxos*/
+    /*display: inline-block;*/
     float: left;
     width: 33.333%;
     padding: 30px;
 }
-.container-single p{
+.container-single:nth-last-child(){
+    margin-right: 0;
+}
+.container-single p{/*ajuste do texto abaixo do pc roxo*/
     text-align: justify;
     padding: 10px 25px;
 }
-.container-single img{
+.container-single img{/*tamanho da img do pc roxo*/
     width: 80px;
 
+}
+.footer{/*ajuste do rodape*/
+    /*clear: both;*/
+    border-top: 2px solid #888888;
+    padding: 60px 0; 
+    text-align: center;
+    color: #888;
+
+}
+.footer p{
+    margin-top: 19px;
 }
