@@ -21,7 +21,8 @@ html body{
 }
 
 .center{
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     margin: 0;
     padding: auto;
     
@@ -29,6 +30,7 @@ html body{
 
 .header{
     min-width: 1200px;
+    padding: 0 2%;
     width: 100%;
     height: 50px;
     margin: auto;
@@ -49,6 +51,7 @@ html body{
 .container-banner{/*ajustes banner fundo pc*/
     display: inline-block;
     width: 100%;
+    padding: 0 2%;
     height: 500px;
     background-image: url(../images/header_bg.png);
     background-size: cover;
@@ -108,7 +111,7 @@ html body{
     width: 350px;
     height: 50px;
     border: 1px solid #cccc;
-    box-shadow: -1px 3px #888888;
+    box-shadow: -1px 3px #585858;
     cursor: pointer;
 }
 .input-container input[type=text]:hover{/*caixas onde se coloca os dados*/
@@ -158,7 +161,6 @@ html body{
     color: white;
 }
 .container-2{/*texto que fala da empresa ferraz tech*/
-    min-width: 1200px;
     padding: 40px 0;
     display: inline-block;
     width: 100%;
@@ -170,7 +172,7 @@ html body{
     font-weight: normal;
 }
 .container-2 p{
-    width: 900px;
+    width: 100%;
     margin: 30px 0;
     display: inline-block;
     text-align: justify;
@@ -179,7 +181,7 @@ html body{
 }
 .container-2 p{
 
-    font-size: large 10px;
+    font-size: large;
 }
 .arrow{/*ajuste do icone seta que fica abaixo da img pc*/
     position: relative;
@@ -191,7 +193,7 @@ html body{
     background-image: url('../images/arrow.png');
 }
 .section-1{
-    padding: 90px 0;
+    padding: 90px 2%;
 
 }
 .section-1 h2{/*ajuste do texto dos pc roxos*/
@@ -233,4 +235,24 @@ html body{
 }
 .footer p{
     margin-top: 19px;
+}
+@media screen and (max-width: 1024px) {
+    .header img{
+        margin:0;
+    }
+    .container-banner{
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .form{
+        padding: 10px;
+        width: 90%;
+        height: 100%;
+        display: inline-block;
+        float: none;
+        top: 0;
+    }
 }
