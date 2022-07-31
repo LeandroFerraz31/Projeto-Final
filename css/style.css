@@ -117,7 +117,7 @@ html body{
 .input-container input[type=text]:hover{/*caixas onde se coloca os dados*/
     background-color: rgba(161, 161, 161, 0.233);
 }
-.input-submit-container{
+.form .input-submit-container{
     text-align: center;
     
 
@@ -174,15 +174,11 @@ html body{
 .container-2 p{
     width: 100%;
     margin: 30px 0;
-    display: inline-block;
-    text-align: justify;
-    font-size: 17px;
+    display: inline-block; 
+    font-size: 19px;
     
 }
-.container-2 p{
 
-    font-size: large;
-}
 .arrow{/*ajuste do icone seta que fica abaixo da img pc*/
     position: relative;
     top: 70px;
@@ -240,6 +236,16 @@ html body{
     .header img{
         margin:0;
     }
+    .container-list{
+        padding: 30px 0;
+        float: none;
+        width: 40%;
+        display: inline-block;
+        
+        max-width: 500px;
+        height: auto;
+        
+    }
     .container-banner{
         width: 100%;
         padding: 40px 2%;
@@ -248,11 +254,42 @@ html body{
     }
     
     .form{
+        max-width: 400px;
         padding: 10px;
-        width: 90%;
+        width: 60%;
         height: 100%;
         display: inline-block;
-        float: none;
+        float: none; /*ajustado*/
         top: 0;
     }
+
+        .input-container input[type=text]{/*caixas onde se coloca os dados*/
+            width: 90%;
+            height: 50px;
+            
+        }
+        
+        }
+        
+    .form input[type=submit]{
+        max-width: 280px;
+        height: 56px;
+        width: 100%;
+        
+
+}
+@media screen and (max-width: 786px){
+    .container-list{
+        margin-top: 0;
+        float: none;
+        display:inline-block;
+        width: 100%;
+    }
+    .form{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        margin-top: 30px;
+    }
+    
 }
