@@ -35,6 +35,7 @@ html body{
     height: 50px;
     margin: auto;
     background-color: #212343;
+    
 }
 .header img{/*ajuste logo Ferraz-Tech*/
     width: 150px;
@@ -46,7 +47,7 @@ html body{
     background-color: white;
     background-clip: content-box;
     border-bottom: 5px solid #0a0a0a3f;
-
+    
 }
 .container-banner{/*ajustes banner fundo pc*/
     display: inline-block;
