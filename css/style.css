@@ -109,7 +109,7 @@ html body{
     margin-left: 9px;
     border-radius: 5px;
     width: 350px;
-    height: 50px;
+    height: 60px;
     border: 1px solid #cccc;
     box-shadow: -1px 3px #585858;
     cursor: pointer;
@@ -155,13 +155,13 @@ html body{
 }
 
 .container-list ul li{/*ajuste texto das li*/
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 10px;
     font-size: 19px;
     color: white;
 }
 .container-2{/*texto que fala da empresa ferraz tech*/
-    padding: 40px 0;
+    padding: 40px 2%;
     display: inline-block;
     width: 100%;
     background-color: #b8b5b5af;
@@ -201,11 +201,11 @@ html body{
 }
 .container-section{
     margin-top: 40px;
+    text-align: center;
+    
 }
 
-.container-section{
-    text-align: center;
-}
+
 .container-single{/*ajuste dos pc roxos*/
     /*display: inline-block;*/
     float: left;
@@ -216,8 +216,9 @@ html body{
     margin-right: 0;
 }
 .container-single p{/*ajuste do texto abaixo do pc roxo*/
+    display: inline-block;
     text-align: justify;
-    padding: 10px 25px;
+    padding: 10px;
 }
 .container-single img{/*tamanho da img do pc roxo*/
     width: 80px;
