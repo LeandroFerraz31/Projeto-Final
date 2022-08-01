@@ -1,6 +1,6 @@
 *{
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
@@ -23,8 +23,8 @@ html body{
 .center{
     max-width: 1280px;
     width: 100%;
-    margin: 0;
-    padding: auto;
+    margin: 0 auto;
+    
     
 }
 
@@ -32,8 +32,7 @@ html body{
     min-width: 1200px;
     padding: 0 2%;
     width: 100%;
-    height: 50px;
-    margin: auto;
+    height: 60px;
     background-color: #212343;
     
 }
@@ -53,7 +52,7 @@ html body{
     display: inline-block;
     width: 100%;
     padding: 0 2%;
-    height: 500px;
+    height: 557px;
     background-image: url(../images/header_bg.png);
     background-size: cover;
     background-position: center;
@@ -63,17 +62,20 @@ html body{
     
 }
 .form{/*formulario onde se coloca os dados*/
-    padding: 7px;
+    
+    padding: 10px;
     width: 400px;
     height: calc(100% + 30px);
     float: right;
     position: relative;
-    top: -19px;
-    border: 9px solid rgba(204, 204, 204, 0.185);
+    top: -15px;
+    border-width: 12px;
+    border: 19px solid rgba(204, 204, 204, 0.185);
+    border-style: solid;
     background-color: white;
     border-radius: 19px;
-    background-clip: content-box;
-    border-bottom: 9px solid #16161657;
+    background-clip: padding-box;
+    border-bottom: 19px solid #16161657;
     margin-right: 20px;
 
 }
@@ -82,18 +84,17 @@ html body{
     margin-left: 9px;
     font-weight: normal;
     color: #999999;
-    font-size: 25px;
+    font-size: 21px;
 }
 .input-container{/* ajuste de todo o campo do formulario*/
-    margin-top: 19px;
+    margin-top: 20px;
 }
-.input-container span,.form p{/* ajuste nome,e-mail e telefone*/
-    margin-left: 9px;
+.input-container span{/* ajuste nome,e-mail e telefone*/
     display: inline-block;
     width: 100%;
     color:#a09c9c;
-    font-size: 19px;
-    font-weight: bold;
+    font-size: 17px;
+    
     
     
 
@@ -103,35 +104,40 @@ html body{
     width: 100%;
     color:#BBBBBB;
     font-size: 21px;
-    margin: 12px 0;
-    margin-left: 4px;
+    margin: 20px 0;
+    
 }
 .input-container input[type=text]{/*caixas onde se coloca os dados*/
-    margin-left: 9px;
+   margin-top:8px;
     border-radius: 5px;
-    width: 350px;
-    height: 60px;
+    width: 344px;
+    height: 55px;
+    padding:6px  ;
     border: 1px solid #cccc;
     box-shadow: -1px 3px #585858;
     cursor: pointer;
 }
-.input-container input[type=text]:hover{/*caixas onde se coloca os dados*/
-    background-color: rgba(161, 161, 161, 0.233);
+.input-submit-container:focus{
+    outline: 0;
 }
 .form .input-submit-container{
     text-align: center;
     
 
 }
+.input-container input[type=text]:hover{/*caixas onde se coloca os dados*/
+    background-color: rgba(161, 161, 161, 0.233);
+}
 .input-submit-container input[type=submit]{/*botão de enviar*/
+    color: wheat;
     width: 280px;
-    height: 56px;
+    height:56px;
+    display: inline-block;
     margin-top: 9px;
     background-color: #363a6d;
-    font-size: 30px;
-    color: wheat;
+    font-size: 25px;
     box-shadow: -1px 3px #888888;
-    border-radius: 9px;
+    border-radius: 8px;
     cursor: pointer;
     border-bottom: 5px solid #212343;
 }
@@ -259,6 +265,7 @@ html body{
     }
     
     .form{
+        
         max-width: 400px;
         padding: 19px;
         width: 100%;
@@ -277,9 +284,11 @@ html body{
         }
         
     .form input[type=submit]{
-        max-width: 280px;
-        height: 56px;
+        margin-top: 50px 50px;
+        max-width:280px;
+        height: 50px;
         width: 100%;
+        
         
 
 }
@@ -293,8 +302,8 @@ html body{
     .form{
         float: none;
         display: inline-block;
-        width: 90%;
-        margin-top: 30px;
+        width: 100%;
+        margin-top: 50px;
     }
     .container-single{
         float: none;
