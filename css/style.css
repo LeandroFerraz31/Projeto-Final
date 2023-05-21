@@ -243,6 +243,7 @@ html body{
 .footer p{
     margin-top: 19px;
 }
+/*Aqui e onde começa o responsivo*/
 @media screen and (max-width: 1024px) {
     .header img{
         margin:0;
