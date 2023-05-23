@@ -1,114 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  
-        <title>Ferraz-Tech</title>
-       <link rel="icon" type="image/x-icon" href="../Projeto Formulario-02/images/favicon_created_by_logaster.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site Responsivo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="header" >
-        <div class="center" >
-            <img src="images/Captura de tela 2022-07-28 132453.png" alt="">
-    </div><!--center-->
-    </div><!--header-->
+  <header class="header">
+    <div class="center">
+      <img src="logo.png" alt="Logo">
+    </div>
+  </header>
 
-    <div class="container-banner">
-        <div class="center">
-        <div>
-        <div class="container-list">
-            <ul>
-                <li>Ganhe duas vezes o seu salário sem sair de casa.</li>
-                 <li>Todos os profissionais Desenvolvedor usam essa ferramenta.</li>
-                  <li>Eu ganhei 3 horas do meu dia com uma simples mudança.</li>
-                  <li>Se você se inscrever hoje, enviarei um ebook grátis.</li>
-            </ul>
-            
-        </div><!--container-list-->
-        </div><!--div cega no container-list incapsulada-->
-        <div>
-            <div class="form">
-                <h2>Preencha o formulário e inicie a sua caminhada para viver um webmaster!</h2>
-                <form>
-                    <div class="input-container">
-                        <span>Nome*</span>
-                        <input type="text" name="nome" riquired>
-                    </div><!--input-container-->
-                    <div class="input-container">
-                        <span>E-mail*</span>
-                        <input type="text" name="nome" riquired>
-                    </div><!--input-container-->
-                    <div class="input-container">
-                        <span>Telefone*</span>
-                        <input type="text" name="nome" riquired>
-                    </div><!--input-container-->
-                    <p class="warning">*Campos obrigatorios</p>
-                    <div class="input-submit-container">
-                        <input type="submit" name="acao" value="Enviar">
-                    </div><!--submit-->
-                    
-                </form>
-            </div><!--form-->
-        </div><!--div cega no form para incapsular-->
-        </div><!--center-->
-    </div><!--container-banner-->
-    <div class="container-2">
-        <div>
-        <div class="center">
-        <h2>Empresa Ferraz-Tech</h2>
-        <p>Se você é um leitor assíduo do Tecnologia que permeia o Mundo, certamente tem prazer em conhecer tudo que é novo e toda boa aplicação da tecnologia em nossas vidas. Ainda assim, raramente refletimos sobre como tudo o que temos criado ao longo dos séculos realmente impactou e continua impactando na nossa sociedade.
-        </p>
-        </div><!--center--->
-        </div><!--div cega p-->
-        <div class="arrow"></div>
-    </div><!--container-2-->
-    <div class="section-1">
-        <h2>Aprenda com quem está no mercado</h2>
-        <div class="container-section">
+  <section class="container-banner">
+    <div class="center">
+      <h1>Bem-vindo ao Meu Site</h1>
+      <p>Explore as nossas incríveis ofertas</p>
+      <button class="btn-show-form">Entre em contato</button>
+    </div>
+  </section>
 
-            <div class="container-single">
-                <div><img src="images/icon.png" alt="">
-                    <div class="text-container-single">
-                        <h2>Aprenda HTML5</h2>
-                        <p>HTML 5 de forma simples e rápida sem precisar fazer faculdade. Ofertas incríveis em milhares de cursos. Acesso vitalício. Instrutores especialistas.</p>
-                    </div><!--text-container-single-->
-                </div><!--img-->
-                
-            </div><!--container-single-->
-            <div class="container-single">
-                <div><img src="images/icon.png" alt="">
-                    <div class="text-container-single">
-                        <h2>Aprenda CSS3</h2>
-                        <p>O CSS é uma linguagem de folha de estilo e é composta por camadas, que permitem estilizar as páginas desenvolvidas com HTML.</p>
-                    </div><!--text-container-single-->
-                </div><!--img-->
-                
-            </div><!--container-single-->
-            <div class="container-single">
-                <div><img src="images/icon.png" alt="">
-                    <div class="text-container-single">
-                        <h2>Aprenda JavaScript</h2>
-                        <p> O curso tem como objetivo ensinar você a programar em JavaScript desde o extremo zero até o mais avançado, tudo isso na pratica e direto ao ponto..</p>
-                    </div><!--text-container-single-->
-                </div><!--img-->
-                
-            </div><!--container-single-->
-            <div class="clear"></div><!--clear-->
-        </div> <!--container-section-->   
-    </div><!--section-1-->
-    <div class="footer">
-        <p>Todos os direitos reservados.</p>
-        <p>AV.Ferraz-Tech Nº123 - Estrela RS.</p>
-    </div><!--footer-->
-    
+  <section class="form-section">
+    <div class="center">
+      <form class="form" id="contact-form">
+        <h2>Entre em Contato</h2>
+        <div class="input-container">
+          <span>Nome</span>
+          <input type="text" name="name" placeholder="Digite seu nome" required>
+        </div>
+        <div class="input-container">
+          <span>Email</span>
+          <input type="email" name="email" placeholder="Digite seu email" required>
+        </div>
+        <div class="input-container">
+          <span>Mensagem</span>
+          <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
+        </div>
+        <div class="input-submit-container">
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="container-list">
+    <div class="center">
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container-2">
+    <div class="center">
+      <h2>Sobre a Empresa</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at tortor bibendum, semper tellus vel,
+        consectetur mi. Phasellus interdum diam ac urna tincidunt, ac aliquet orci aliquam.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="center">
+      <p>Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
